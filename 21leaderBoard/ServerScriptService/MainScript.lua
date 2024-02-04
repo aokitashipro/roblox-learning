@@ -4,7 +4,7 @@
 -- プレイヤーが入ってきた時
 -- game全体に接続
 -- getServiceはRobloxシステムのさまざまな機能を提供する関数
-local Players = game.GetService("Players")
+local Players = game:GetService("Players")
 
 -- LeaderBoardは
 -- Players/player/leaderstats 自動で表示される
@@ -15,7 +15,7 @@ local function createLeaderboard(player)
 
   -- LeaderBoardにスコア表示
   -- player名の他に4つまで表示できるよう
-  local point = Instance:new("IntValue")
+  local point = Instance.new("IntValue")
   point.Name = "Point"
   point.Value = 0
   point.Parent = board
@@ -27,10 +27,10 @@ local function onPlayerAdded(player)
 end
 
 -- (Players) プレイヤーが入ってきた時
-Players.PlayerAdded:Connnect(onPlayerAdded)
+Players.PlayerAdded:Connect(onPlayerAdded)
 
 -- (Players)  プレイヤー退出
-Players.PlayerRemoving:Connnect(onPlayerRemoving)
+Players.PlayerRemoving:Connect(onPlayerRemoving)
 
 -- (Player) キャラクターが呼ばれた時
 -- player.CharacterAdded
@@ -46,7 +46,7 @@ local ball = ReplicatedStorage:WaitForChild("Ball")
 while wait(1) do
   local p = ball:Clone()
   local x = math.random(-50, 50)
-  local y = p.Position.Y 
+  local y = p.Position.Y
   local z = math.random(-50, 50)
   p.Position = Vector3.new(x, y, z)
   p.Parent = game.Workspace

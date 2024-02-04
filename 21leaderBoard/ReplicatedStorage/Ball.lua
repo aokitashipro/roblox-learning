@@ -4,7 +4,7 @@
 local Players = game:GetService("Players")
 local part = script.Parent
 
-local function onTouched()
+local function onTouched(hit)
   local character = hit.Parent
   local humanoid = character:FindFirstChildWhichIsA("Humanoid")
   if humanoid then
@@ -13,13 +13,13 @@ local function onTouched()
 
     -- point更新
     player.leaderstats.Point.Value = player.leaderstats.Point.Value + 1
-    part.Destroy()
+    part:Destroy()
   end
 end
 
 part.Touched:Connect(onTouched)
 wait(10)
-part.Destroy()
+part:Destroy()
 
 -- GUI ReplicatedStorageに格納する
 -- 最初は表示されない

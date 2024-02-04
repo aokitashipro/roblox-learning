@@ -6,6 +6,7 @@ part.Shape = Enum.PartType.Ball
 part.Name = "Ball"
 part.Anchored = false
 
+
 for i = 1 , 10 do
   -- オブジェクトの関数
   -- 指定する際は :関数名 プロパティは.
@@ -22,9 +23,10 @@ end
 -- 消去 無限ループ
 while wait(0.5) do
   -- 子供を見つけて見つかったオブジェクトを返す
-  local p = game.Wordspace:FindFirstChild("Ball")
+  local p = game.Workspace:FindFirstChild("Ball")
   if p then
     p:Destroy()
   else
     break
+  end
 end 
