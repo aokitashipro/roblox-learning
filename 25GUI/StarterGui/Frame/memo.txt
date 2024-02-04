@@ -1,0 +1,20 @@
+画面表示
+絶対座標、相対座標
+
+相対座標に設定
+Position
+XとYのscale, offsetは全て0
+
+Size(ウィンドウの大きさ)
+XとY Scale 1 offset 0
+
+Scale 1 が画面の最大サイズ
+Scale 0.5 半分
+
+画面中央に持っていく
+
+(1.0 - 0.5 ) / 2 = 0.25 をScaleに設定
+
+ボタン
+Clickで反応するTextButton
+
