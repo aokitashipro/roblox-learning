@@ -7,7 +7,7 @@ local openEvent = ReplicatedStorage.OpenEvent
 local frame = script.Parent
 local closeButton = frame.CloseButton
 
-closeButton.MouseButton1Click:Connect(function()
+closeButton.MouseButtonClick:Connect(function()
   frame.Visible = false
 end) 
 

@@ -1,0 +1,4 @@
+ゲーム全体に影響するプログラムは
+ServerScriptServiceに書く
+
+ReplicatedStorageはゲーム内の倉庫のようなもの

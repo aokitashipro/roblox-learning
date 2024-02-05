@@ -10,7 +10,7 @@ end
 
 -- 暗くする
 while a < 8 do
-  script.Parent.PointLight.Rnage = a
+  script.Parent.PointLight.Range = a
   wait(0.1)
   a = a - 1
 end

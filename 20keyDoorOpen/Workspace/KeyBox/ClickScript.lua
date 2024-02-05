@@ -1,9 +1,3 @@
--- 鍵を拾ってドアを開ける
--- StarterParkはプレイヤーの持ち物
--- Playersの中にPlayerが入る
--- その中にBackpackの中にKeyが入る
--- 装備するとキャラクターモデルの中に入る
-
 -- https://youtu.be/d3fX8UqynA0?si=lRCH53vtWMnKKbW0
 -- Partの中にKeyを持ってくる
 -- の中にあるHandleをコピー

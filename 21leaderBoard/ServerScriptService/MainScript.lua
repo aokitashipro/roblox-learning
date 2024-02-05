@@ -10,7 +10,7 @@ local Players = game:GetService("Players")
 -- Players/player/leaderstats 自動で表示される
 local function createLeaderboard(player)
   local board = Instance.new("Folder")
-  board.Name = "leaderstats"
+  board.Name = "leaderstats" -- この名前にすれば表示される
   board.Parent = player
 
   -- LeaderBoardにスコア表示

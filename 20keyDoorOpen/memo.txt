@@ -1,0 +1,11 @@
+鍵を拾ってドアを開ける
+
+StarterParkはプレイヤーの持ち物 (Toolというオブジェクト限定)
+
+Players/
+  Player/
+    Backpack/
+      Key
+
+装備するとキャラクターモデルの中に入る
+
